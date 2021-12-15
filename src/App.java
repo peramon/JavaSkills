@@ -1,3 +1,4 @@
+import codeblocks.Person;
 import enumeration.Continents;
 import enumeration.Days;
 
@@ -12,8 +13,14 @@ public class App {
         System.out.println("\nContinent 4 -> " + Continents.AMERICA + ", number of countries -> " + Continents.AMERICA.getCountries());
         printContinents();
 
-    }
+        // Code blocks
+        System.out.println("-------------------- CODE BLOCKS --------------------");
+        Person p1 = new Person();
+        int idPerson = p1.getIdPerson();
+        System.out.println("idPerson = " + idPerson);
 
+    }
+    
     public static void indicateDay(Days days) {
         switch (days) {
             case MONDAY:
