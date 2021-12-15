@@ -1,3 +1,4 @@
+import foreach.FePerson;
 import codeblocks.Person;
 import enumeration.Continents;
 import enumeration.Days;
@@ -19,6 +20,19 @@ public class App {
         int idPerson = p1.getIdPerson();
         System.out.println("idPerson = " + idPerson);
 
+        // Code blocks
+        System.out.println("-------------------- FOR EACH--------------------");
+        // Array
+        int ages[] = {23,22,56};
+        for(int age:ages){
+            System.out.println("Age -> " + age);
+        }
+        // Object
+        FePerson fe_persons[] = {new FePerson("Juan"), new FePerson("Pedro")};
+        for(FePerson fe_person: fe_persons){
+            String name = fe_person.getName();
+            System.out.println("Name person -> " + name);
+        }
     }
     
     public static void indicateDay(Days days) {
