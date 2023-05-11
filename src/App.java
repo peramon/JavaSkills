@@ -1,6 +1,9 @@
 import foreach.FePerson;
 import poo.Alumno;
 
+// import java.util.Locale;
+import java.util.Scanner;
+
 import codeblocks.Person;
 import enumeration.Continents;
 import enumeration.Days;
@@ -63,7 +66,15 @@ public class App {
         System.out.println(alumno1.equals(alumno2));
         System.out.println(alumno1.equalsIgnoreCase(alumno2));
 
-        System.out.println("\n-------------------- APIS --------------------");
+        System.out.println("\n-------------------- API PAQUETES/Entrada Datos --------------------");
+        /* System.out.println(Math.round(13.23)); */
+        Scanner entrada = new Scanner(System.in);
+        // Locale mi_objeto_dos;
+        System.out.println("Introduce tu nombre por favor");
+        String nombre_usuario = entrada.nextLine();
+        System.out.println("Introduce tu edad por favor");
+        int edad_usuario = entrada.nextInt();
+        System.out.println("Nombre usuario: " + nombre_usuario + ", edad: " + edad_usuario);
 
     }
 
