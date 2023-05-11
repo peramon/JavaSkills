@@ -10,10 +10,10 @@ public class FePerson{
         this.name = name;
     }
 
-    // Setters
+    // Getters
     public String getName(){ return this.name;}
 
-    // Getters
+    // Setters
     public void setName(String name){
         this.name = name;
     }

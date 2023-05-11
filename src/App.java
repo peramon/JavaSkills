@@ -1,11 +1,12 @@
 import foreach.FePerson;
+import poo.Alumno;
 import codeblocks.Person;
 import enumeration.Continents;
 import enumeration.Days;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        // ENUMS
+        /* // ENUMS
         // Days enum
         System.out.println("-------------------- ENUMS --------------------");
         System.out.println("Day -> " + Days.MONDAY);
@@ -32,7 +33,19 @@ public class App {
         for(FePerson fe_person: fe_persons){
             String name = fe_person.getName();
             System.out.println("Name person -> " + name);
-        }
+        } */
+
+        // Java Arrays
+        System.out.println("-------------------- POO --------------------");
+        Alumno alumno = new Alumno();
+        alumno.setName("Paul");
+        alumno.setLastName("Ramon");
+        alumno.setId(25);
+        alumno.showName();
+
+        System.out.println("-------------------- Cadenas --------------------");
+        
+
     }
     
     public static void indicateDay(Days days) {
